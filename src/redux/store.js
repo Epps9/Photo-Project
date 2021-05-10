@@ -3,10 +3,12 @@ import thunk from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension';
 
 import { initialState } from './initialState';
+import { reducer as photosReducer } from './globalRedux';
 
 
 // define reducers
 const reducers = {
+  photos: photosReducer,
 };
 
 // add blank reducers for initial state properties without reducers
